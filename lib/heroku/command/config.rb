@@ -27,7 +27,10 @@ private ######################################################################
   end
 
   def write_local_config(config)
-    File.open(".environment", "w") { |file| file.puts YAML.dump(config) }
+    File.open(".environment", "w") do |file|
+      file.puts "---"
+      file.puts YAML.dump(config).split("\n")[1..-1].sort.join("\n")
+    end
   end
 
   def write_remote_config(config)
