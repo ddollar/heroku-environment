@@ -8,7 +8,7 @@ Add the heroku gem plugin:
 
     $ heroku plugins:install git://github.com/ddollar/heroku-environment.git
     heroku-environment installed
-    
+
 Add the gem to your app:
 
     # Gemfile
@@ -20,15 +20,17 @@ Add the following to `.gitignore`:
 
 ## Usage
 
+    # by default, existing keys will not be overwritten
     $ heroku config:pull
     Config for example written to .environment
-    
-    $ heroku config:pull --app example2
-    Config for example2 written to .environment
-    
+
+    # optional --overwrite allows you to have the push overwrite keys
+    $ heroku config:pull --overwrite
+    Config in .environment written to example
+
     $ heroku config:push
     Config in .environment written to example
-    
+
 ## How it works
 
 Your environment will be stored locally in a file named `.environment`. This
