@@ -1,4 +1,4 @@
-require 'heroku/command/config'
+require 'environment/heroku/command/config'
 
 Heroku::Command::Help.group("Configuration Sync") do |group|
   group.command "config:pull", "pull remote config from the app"

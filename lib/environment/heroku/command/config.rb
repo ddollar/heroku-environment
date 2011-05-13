@@ -2,6 +2,8 @@ require "yaml"
 
 class Heroku::Command::Config < Heroku::Command::BaseWithApp
 
+  # config:pull
+  #
   def pull
     interactive = extract_option("--interactive")
     overwrite   = extract_option("--overwrite")
@@ -11,6 +13,8 @@ class Heroku::Command::Config < Heroku::Command::BaseWithApp
     display "Config for #{app} written to .environment"
   end
 
+  # config:push
+  #
   def push
     interactive = extract_option("--interactive")
     overwrite   = extract_option("--overwrite")
