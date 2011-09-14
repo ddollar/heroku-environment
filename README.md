@@ -1,3 +1,7 @@
+# Deprecation Notice
+
+This project has been deprecated in favor of [heroku-env](http://github.com/ddollar/heroku-env)
+
 # Heroku::Environment
 
 Provides a way for you to push/pull your Heroku environment to use locally.
