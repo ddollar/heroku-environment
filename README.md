@@ -1,6 +1,6 @@
 # Deprecation Notice
 
-This project has been deprecated in favor of [heroku-env](http://github.com/ddollar/heroku-env)
+This project has been deprecated in favor of [heroku-config](http://github.com/ddollar/heroku-config)
 
 # Heroku::Environment
 
